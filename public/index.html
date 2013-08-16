@@ -124,10 +124,11 @@
     <header id="portal-container-header" data-role="header" data-position="fixed" data-theme="c">
     	<h2 class="no-ellipses">Portal Container</h2>
 		<a href="#portal-container-nav" data-role="button" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-inline="true">Menu</a>
+		<a href="#applet-panel" data-role="button" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-inline="true">Applet Menu</a>
     </header>
 
-    <div data-role="panel" id="portal-container-nav" data-display="push" data-theme="a" data-position-fixed="true"></div>
-    <div data-role="panel" id="applet-panel" data-display="push" data-theme="a" data-position-fixed="true"></div>
+    <div data-role="panel" id="portal-container-nav" data-display="overlay" data-theme="a"></div>
+    <div data-role="panel" id="applet-panel" data-display="overlay" data-theme="a" data-position-fixed="true"></div>
     <div id="applet-main" data-role="content"></div>
     
     <footer id="portal-container-footer" class="footer"></footer>
