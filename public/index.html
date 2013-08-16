@@ -27,7 +27,7 @@
             // App Environment
             // ---------------
             //  Tip: Set to true to turn on "production" mode
-            var production = true,
+            var production = false,
                     filesToLoad,
             //BoilerplateMVC Helper Methods
                     boilerplateMVC = {
@@ -121,16 +121,16 @@
 
 <div data-role="page" class="ui-responsive-panel">
 
-    <header id="header" data-role="header" data-position="fixed" data-theme="c">
-    	<h2 class="no-ellipses">MP</h2>
-		<a href="#left-panel" data-role="button" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-inline="true">Menu</a>
+    <header id="portal-container-header" data-role="header" data-position="fixed" data-theme="c">
+    	<h2 class="no-ellipses">Portal Container</h2>
+		<a href="#portal-container-nav" data-role="button" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" data-inline="true">Menu</a>
     </header>
 
-    <div id="main" class="container-fluid" data-role="content"></div>
-
-    <div data-role="panel" id="left-panel" data-display="push" data-theme="a" data-position-fixed="true"></div>
+    <div data-role="panel" id="portal-container-nav" data-display="push" data-theme="a" data-position-fixed="true"></div>
+    <div data-role="panel" id="applet-panel" data-display="push" data-theme="a" data-position-fixed="true"></div>
+    <div id="applet-main" data-role="content"></div>
     
-    <footer class="footer navbar navbar-fixed-bottom"></footer>
+    <footer id="portal-container-footer" class="footer"></footer>
 </div>
 
 </body>

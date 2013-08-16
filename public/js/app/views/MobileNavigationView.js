@@ -5,14 +5,14 @@ define([ 'App', 'backbone', 'marionette', 'jquery', 'jquerymobile', 'hbs!templat
             _.bindAll(this);
         },
         onShow : function() {
-            $('#left-panel').trigger('create');
+        	App.portalContainerNavRegion.$el.trigger('create');
 
             App.vent.on('closePanel', function(page) {
-                App.leftPanelRegion.$el.panel('close');
+                App.portalContainerNavRegion.$el.panel('close');
             });
 
             App.vent.on('openPanel', function(page) {
-                App.leftPanelRegion.$el.panel('open');
+                App.portalContainerNavRegion.$el.panel('open');
             });
             
             App.vent.trigger('openPanel');
@@ -21,7 +21,7 @@ define([ 'App', 'backbone', 'marionette', 'jquery', 'jquerymobile', 'hbs!templat
             "tap a" : "closePanel"
         },
         closePanel : function(e) {
-            $("#left-panel").panel("close");
+            App.vent.trigger('closePanel');
         }
     });
 });

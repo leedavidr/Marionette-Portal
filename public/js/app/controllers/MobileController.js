@@ -4,12 +4,12 @@ define(
 				Marionette, HomeLayout, MobileNavigationView) {
 			return Backbone.Marionette.Controller.extend({
 				initialize : function(options) {
-					App.leftPanelRegion.show(new MobileNavigationView());
+					App.portalContainerNavRegion.show(new MobileNavigationView());
 				},
 				// gets mapped to in AppRouter's appRoutes
 				index : function() {
 					var homeLayout = new HomeLayout();
-					App.mainRegion.show(homeLayout);
+					App.appletMainRegion.show(homeLayout);
 				}
 			});
 		});
