@@ -1,10 +1,10 @@
 define(
 		[ 'App', 'backbone', 'marionette', 'views/HomeLayout',
-				'views/MobileNavigationView' ], function(App, Backbone,
-				Marionette, HomeLayout, MobileNavigationView) {
+				'views/PanelContainerNavigationView' ], function(App, Backbone,
+				Marionette, HomeLayout, PanelContainerNavigationView) {
 			return Backbone.Marionette.Controller.extend({
 				initialize : function(options) {
-					App.portalContainerNavRegion.show(new MobileNavigationView());
+					App.portalContainerNavigationRegion.show(new PanelContainerNavigationView());
 				},
 				// gets mapped to in AppRouter's appRoutes
 				index : function() {

@@ -1,8 +1,10 @@
 @import url("jquery.mobile.css");
 @import url("commonstyles.css");
 
-header h2 {
-	padding: 0 20px;
+
+
+footer {
+	height: 35px;
 }
 
 .img-circle {

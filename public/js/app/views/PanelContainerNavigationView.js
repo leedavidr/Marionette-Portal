@@ -1,18 +1,18 @@
-define([ 'App', 'backbone', 'marionette', 'jquery', 'jquerymobile', 'hbs!templates/mobileNavigation' ], function(App, Backbone, Marionette, $, jqm, template) {
+define([ 'App', 'backbone', 'marionette', 'jquery', 'jquerymobile', 'hbs!templates/panelContainerNavigation' ], function(App, Backbone, Marionette, $, jqm, template) {
     return Backbone.Marionette.ItemView.extend({
         template : template,
         initialize : function() {
             _.bindAll(this);
         },
         onShow : function() {
-        	App.portalContainerNavRegion.$el.trigger('create');
+        	App.portalContainerNavigationRegion.$el.trigger('create');
 
             App.vent.on('closePanel', function(page) {
-                App.portalContainerNavRegion.$el.panel('close');
+                App.portalContainerNavigationRegion.$el.panel('close');
             });
 
             App.vent.on('openPanel', function(page) {
-                App.portalContainerNavRegion.$el.panel('open');
+                App.portalContainerNavigationRegion.$el.panel('open');
             });
             
             App.vent.trigger('openPanel');
