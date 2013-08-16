@@ -1,0 +1,64 @@
+@import url("jquery.mobile.css");
+@import url("commonstyles.css");
+
+header h2 {
+	padding: 0 20px;
+}
+
+.img-circle {
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+}
+
+/* Shadow to overlay above panel list items - start */
+.ui-panel-display-reveal {
+       -webkit-box-shadow: none;
+       -moz-box-shadow: none;
+       box-shadow: none;
+}
+
+.ui-panel-content-fixed-toolbar-position-left.ui-panel-content-fixed-toolbar-open,
+.ui-panel-content-wrap-position-left.ui-panel-content-wrap-open {
+       -webkit-box-shadow: -5px 0 5px rgba(0,0,0,.10);
+       -moz-box-shadow: -5px 0 5px rgba(0,0,0,.10);
+       box-shadow: -5px 0 5px rgba(0,0,0,.10);
+}
+/* Shadow to overlay above panel list items - end */
+
+.pull-left {
+	float: left;
+}
+
+.left-image {
+	margin: 0 10px 10px 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/* wrap push on wide viewports once open */
+@media (min-width: 35em){
+	.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-push,
+	.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-open.ui-panel-content-fixed-toolbar-display-reveal,
+	.ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-open.ui-panel-content-wrap-display-push,
+	.ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-open.ui-panel-content-wrap-display-reveal {
+		margin-right: 17em;
+	}
+	.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-open.ui-panel-content-wrap-display-push.ui-panel-content-fixed-toolbar-position-left,
+	.ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-open.ui-panel-content-wrap-display-reveal.ui-panel-content-fixed-toolbar-position-left,
+	.ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-open.ui-panel-content-wrap-display-push.ui-panel-content-wrap-position-left,
+	.ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-open.ui-panel-content-wrap-display-reveal.ui-panel-content-wrap-position-left {
+		margin: 0 17em 0 0;
+	}
+	
+    .ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-push,
+    .ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-reveal {
+        width: auto;    
+    }
+	.ui-responsive-panel .ui-panel-dismiss-display-push {
+		display: none;
+	}
+}

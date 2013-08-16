@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cinzel-Regular'), url(http://themes.googleusercontent.com/static/fonts/cinzel/v1/mLL0ZqnXRx3m16FnBy9gcg.woff) format('woff');
+}
+
+.navbar .brand, h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-family: 'Cinzel', serif;
+}
+
+h1 {
+	border-bottom: 1px solid red;
+}

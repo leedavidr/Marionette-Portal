@@ -1,0 +1,14 @@
+<div class="hero-unit">
+    <h1>Marionette Portal</h1>
+
+	<p class="muted">You are viewing the 
+		{{#if mobile}}
+        {{!"mobile" key in i18n file}}
+        <strong>{{$ mobile}}</strong>
+        {{else}}
+        {{!"desktop" key in i18n file}}
+        <strong>{{$ desktop}}</strong>
+        {{/if}}
+        version of the website. 
+	</p>
+</div>
