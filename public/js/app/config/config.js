@@ -21,7 +21,10 @@ require.config({
         "backbone.validateAll":"../libs/plugins/Backbone.validateAll",
         "text":"../libs/plugins/text",
         "jasminejquery": "../libs/plugins/jasmine-jquery",
-        "jquery.form": "../libs/plugins/jquery.form.min"
+        "jquery.form": "../libs/plugins/jquery.form.min",
+        	
+        // Modules
+        "searchModule": "modules/search/search"
     },
     // Sets the configuration for your third party scripts that are not AMD compatible
     shim:{

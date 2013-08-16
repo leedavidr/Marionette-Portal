@@ -1,4 +1,4 @@
-define([ 'App', 'backbone', 'marionette', 'jquery', 'jquerymobile', 'hbs!templates/panelContainerNavigation' ], function(App, Backbone, Marionette, $, jqm, template) {
+define([ 'App', 'backbone', 'marionette', 'jquery', 'jquerymobile', 'hbs!templates/portalContainerNavigation' ], function(App, Backbone, Marionette, $, jqm, template) {
     return Backbone.Marionette.ItemView.extend({
         template : template,
         initialize : function() {
